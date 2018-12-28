@@ -1,0 +1,231 @@
+@charset "UTF-8";
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #e0e0e2;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.namecard {
+  position: relative;
+  width: 480px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  color: #21397d;
+  font-family: "Noto Sans TC", 微軟正黑體;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  transition-duration: 1.5s;
+}
+.namecard:hover {
+  transform: translate3d(-5px, -5px, 0);
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+}
+.namecard:hover h1, .namecard:hover #job, .namecard:hover hr, .namecard:hover span, .namecard:hover #job, .namecard:hover .content {
+  opacity: 1;
+}
+.namecard:hover hr {
+  width: 470px;
+  transform: rotate(180deg);
+}
+.namecard:hover hr {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+.namecard:hover h1 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  margin: 5px;
+}
+.namecard:hover #namecard {
+  position: abosolute;
+  top: 90%;
+  left: 90%;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+}
+.namecard:hover span {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 700;
+  top: 9%;
+  left: 20%;
+}
+.namecard:hover #job {
+  position: absolute;
+  top: 20%;
+  left: 6%;
+}
+.namecard:hover .content {
+  position: absolute;
+  top: 50%;
+  left: 6%;
+}
+.namecard span, .namecard #job, .namecard .content {
+  opacity: 0;
+}
+.namecard hr {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  height: 1px;
+  width: 50px;
+  opacity: 1;
+  background-color: #21397d;
+  transform: rotate(90deg);
+  transition-duration: 1.5s;
+}
+.namecard h1 {
+  position: absolute;
+  top: 48%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  transition-duration: 1.5s;
+}
+.namecard #namecard {
+  position: absolute;
+  top: 48%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  font-weight: 700;
+  margin: 21.4333px 0;
+  transition-duration: 1.5s;
+}
+.namecard span {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 700;
+  top: 12%;
+  left: 20%;
+  color: #35467D;
+  transition-duration: 1.5s;
+  transition-delay: 1.5s;
+}
+.namecard #job {
+  position: absolute;
+  top: 23%;
+  left: 6%;
+  color: #35467D;
+  transition-duration: 1.5s;
+  transition-delay: 1.5s;
+}
+.namecard .content {
+  position: absolute;
+  top: 55%;
+  left: 6%;
+  color: #35467D;
+  transition-duration: 1.5s;
+  transition-delay: 1.5s;
+}
+
+.wrapper {
+  margin: 0 auto;
+  margin-top: 150px;
+  width: 60px;
+  height: 60px;
+}
+
+path {
+  stroke: white;
+  fill: white;
+  stroke-dasharray: 188;
+  stroke-dashoffset: 188;
+  animation-name: animate_1;
+  animation-fill-mode: forwards;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.path-1 {
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+}
+
+.path-2 {
+  animation-duration: 0.5s;
+  animation-delay: 0.3s;
+}
+
+line {
+  stroke: white;
+  fill: white;
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+  animation-name: animate_2;
+  animation-fill-mode: forwards;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.path-3 {
+  animation-duration: 0.4s;
+  animation-delay: 0.7s;
+}
+
+.middle {
+  stroke: white;
+  fill: white;
+  stroke-dasharray: 340;
+  stroke-dashoffset: 340;
+  animation-name: animate_3;
+  animation-fill-mode: forwards;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.path-4 {
+  animation-duration: 0.3s;
+  animation-delay: 1s;
+  animation-name: animate_3;
+  animation-direction: reverse;
+}
+
+.path-5 {
+  animation-duration: 0.3s;
+  animation-delay: 1.3s;
+}
+
+.path-6 {
+  animation-duration: 0.3s;
+  animation-delay: 1.6s;
+}
+
+.path-7 {
+  animation-duration: 0.3s;
+  animation-delay: 1.9s;
+}
+
+@keyframes animate_1 {
+  0% {
+    stroke-dashoffset: 188;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes animate_2 {
+  0% {
+    stroke-dashoffset: 200;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes animate_3 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -340;
+  }
+}
